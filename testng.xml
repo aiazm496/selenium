@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests">
+    <test  name="Selenium Remote Driver Flight Check test on Chrome">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="VerifyLoginTest"></class>
+        </classes>
+    </test>
+
+    <test name="Selenium Remote Driver Flight Check test on Firefox">
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="VerifyLoginTest"></class>
+        </classes>
+    </test>
+
+    <test  name="Selenium Remote Driver Flight Check test on Edge">
+        <parameter name="browser" value="edge"></parameter>
+        <classes>
+            <class name="VerifyLoginTest"></class>
+        </classes>
+    </test>
+</suite>
